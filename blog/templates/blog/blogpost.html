@@ -1,0 +1,37 @@
+{%extends 'blog/basic.html'%}
+
+{%block body%}
+<div class="container">
+<div class="row mt-4">
+    <div class="col-md-8 blog-main">
+        <h2 class="pb-4 mb-0 font-italic">
+            {{post.title}}
+        </h2>
+        <p class="blog-post-meta mt-2 pb-2 border-bottom">On {{post.pub_date}} by <a href="#">{{post.publisher}}</a></p>
+        <div class="blog-post">
+            <h3>{{post.head0}}</h3>
+            
+                <p>{{post.chead0}}</p>
+                <h3>{{post.head1}}</h3>
+                <p>{{post.chead1}}</p>
+                <h3>{{post.head2}}</h3>
+                <p>{{post.chead2}}</p>
+        </div><!-- /.blog-post -->
+    </div><!-- /.blog-main -->
+    <aside class="col-md-4 blog-sidebar">
+        <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Vcart is an <em>ecommerce website</em>. You can use it for buying and searching items online. </p>
+        </div>
+        <div class="p-4">
+            <h4 class="font-italic">Contact Us On: </h4>
+            <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ol>
+        </div>
+    </aside><!-- /.blog-sidebar -->
+</div>
+</div>
+{%endblock%}

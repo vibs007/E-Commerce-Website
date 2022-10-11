@@ -47,8 +47,14 @@ cart[idstr] = 1;
 }
 console.log(cart);
 localStorage.setItem('cart', JSON.stringify(cart));
-document.getElementById('cart').innerHTML = Object.keys(cart).length;
+// document.getElementById('cart').innerHTML = Object.keys(cart).length;
 });
+var sum = 0
+    for(var item in cart)
+    {
+        sum += cart[item][0]
+    }
+    document.getElementById('cart').innerHTML = sum;
 $('#popcart').popover();
 document.getElementById("popcart").setAttribute('data-content', '<h5>Cart for your items in my shopping cart</h5>');
 </script>

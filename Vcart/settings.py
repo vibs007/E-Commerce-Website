@@ -57,7 +57,7 @@ ROOT_URLCONF = 'Vcart.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Vcart/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
